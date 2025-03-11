@@ -127,7 +127,7 @@ This creates a `dist` directory with optimized production build ready for deploy
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details
 
 ## Acknowledgements
 
