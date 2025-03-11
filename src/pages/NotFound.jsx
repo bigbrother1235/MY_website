@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import PageTransition from '../components/animations/PageTransition';
 import ParticleBackground from '../components/animations/ParticleBackground';
-import '../styles/pages/notFound.css';
+import '../styles/pages/NotFound.css';
 
-/**
+/**1
  * 404 Not Found page component
  * @returns {JSX.Element} Not Found page
  */
