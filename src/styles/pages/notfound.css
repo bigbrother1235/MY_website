@@ -1,0 +1,418 @@
+/* 404 Not Found Page Styles */
+.not-found-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-background);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .light-mode .not-found-page {
+    background-color: var(--color-background-light);
+  }
+  
+  /* Background decorative elements */
+  .not-found-page::before,
+  .not-found-page::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+  }
+  
+  .not-found-page::before {
+    width: 600px;
+    height: 600px;
+    top: -300px;
+    right: -200px;
+    background: radial-gradient(circle, rgba(191, 0, 255, 0.1), transparent 70%);
+    filter: blur(30px);
+  }
+  
+  .not-found-page::after {
+    width: 500px;
+    height: 500px;
+    bottom: -250px;
+    left: -200px;
+    background: radial-gradient(circle, rgba(0, 240, 255, 0.1), transparent 70%);
+    filter: blur(30px);
+  }
+  
+  .not-found-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: var(--space-5);
+    max-width: 800px;
+  }
+  
+  /* 404 Code Styling with Glitch Effect */
+  .not-found-code {
+    position: relative;
+    margin-bottom: var(--space-6);
+  }
+  
+  .glitch {
+    font-family: var(--font-heading);
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    color: var(--color-text);
+    letter-spacing: -8px;
+  }
+  
+  @keyframes glitch-animation {
+    0% {
+      clip: rect(42px, 9999px, 44px, 0);
+    }
+    5% {
+      clip: rect(12px, 9999px, 59px, 0);
+    }
+    10% {
+      clip: rect(48px, 9999px, 29px, 0);
+    }
+    15% {
+      clip: rect(42px, 9999px, 73px, 0);
+    }
+    20% {
+      clip: rect(63px, 9999px, 27px, 0);
+    }
+    25% {
+      clip: rect(34px, 9999px, 55px, 0);
+    }
+    30% {
+      clip: rect(86px, 9999px, 73px, 0);
+    }
+    35% {
+      clip: rect(20px, 9999px, 20px, 0);
+    }
+    40% {
+      clip: rect(26px, 9999px, 60px, 0);
+    }
+    45% {
+      clip: rect(25px, 9999px, 66px, 0);
+    }
+    50% {
+      clip: rect(57px, 9999px, 98px, 0);
+    }
+    55% {
+      clip: rect(5px, 9999px, 46px, 0);
+    }
+    60% {
+      clip: rect(82px, 9999px, 31px, 0);
+    }
+    65% {
+      clip: rect(54px, 9999px, 27px, 0);
+    }
+    70% {
+      clip: rect(28px, 9999px, 99px, 0);
+    }
+    75% {
+      clip: rect(45px, 9999px, 69px, 0);
+    }
+    80% {
+      clip: rect(23px, 9999px, 85px, 0);
+    }
+    85% {
+      clip: rect(54px, 9999px, 84px, 0);
+    }
+    90% {
+      clip: rect(45px, 9999px, 47px, 0);
+    }
+    95% {
+      clip: rect(37px, 9999px, 20px, 0);
+    }
+    100% {
+      clip: rect(4px, 9999px, 91px, 0);
+    }
+  }
+  
+  @keyframes glitch-animation-2 {
+    0% {
+      clip: rect(65px, 9999px, 100px, 0);
+    }
+    5% {
+      clip: rect(52px, 9999px, 74px, 0);
+    }
+    10% {
+      clip: rect(79px, 9999px, 85px, 0);
+    }
+    15% {
+      clip: rect(75px, 9999px, 5px, 0);
+    }
+    20% {
+      clip: rect(67px, 9999px, 61px, 0);
+    }
+    25% {
+      clip: rect(14px, 9999px, 79px, 0);
+    }
+    30% {
+      clip: rect(1px, 9999px, 66px, 0);
+    }
+    35% {
+      clip: rect(86px, 9999px, 30px, 0);
+    }
+    40% {
+      clip: rect(23px, 9999px, 98px, 0);
+    }
+    45% {
+      clip: rect(85px, 9999px, 72px, 0);
+    }
+    50% {
+      clip: rect(71px, 9999px, 75px, 0);
+    }
+    55% {
+      clip: rect(2px, 9999px, 48px, 0);
+    }
+    60% {
+      clip: rect(30px, 9999px, 16px, 0);
+    }
+    65% {
+      clip: rect(59px, 9999px, 50px, 0);
+    }
+    70% {
+      clip: rect(41px, 9999px, 62px, 0);
+    }
+    75% {
+      clip: rect(2px, 9999px, 82px, 0);
+    }
+    80% {
+      clip: rect(47px, 9999px, 73px, 0);
+    }
+    85% {
+      clip: rect(3px, 9999px, 27px, 0);
+    }
+    90% {
+      clip: rect(26px, 9999px, 55px, 0);
+    }
+    95% {
+      clip: rect(42px, 9999px, 97px, 0);
+    }
+    100% {
+      clip: rect(38px, 9999px, 49px, 0);
+    }
+  }
+  
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .glitch::before {
+    left: 2px;
+    text-shadow: -1px 0 var(--color-primary);
+    animation: glitch-animation 2s infinite linear alternate-reverse;
+  }
+  
+  .glitch::after {
+    left: -2px;
+    text-shadow: 1px 0 var(--color-secondary);
+    animation: glitch-animation-2 3s infinite linear alternate-reverse;
+  }
+  
+  /* Glow effect */
+  .glow {
+    font-family: var(--font-heading);
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: transparent;
+    letter-spacing: -8px;
+    text-shadow: 0 0 20px var(--color-primary), 0 0 30px var(--color-secondary);
+    opacity: 0.2;
+  }
+  
+  /* Scanlines effect */
+  .scanlines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  .scanlines::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(255, 255, 255, 0.05) 0.5%,
+      transparent 1%
+    );
+    animation: scanline 8s linear infinite;
+  }
+  
+  @keyframes scanline {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
+  /* Title and message */
+  .not-found-title {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--space-4);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .not-found-message {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-6);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Action buttons */
+  .not-found-actions {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    margin-bottom: var(--space-6);
+  }
+  
+  /* Terminal effect */
+  .not-found-terminal {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--color-background-tertiary);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-medium);
+    overflow: hidden;
+  }
+  
+  .terminal-header {
+    background-color: var(--color-background-secondary);
+    padding: var(--space-2) var(--space-3);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-border);
+  }
+  
+  .terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+  }
+  
+  .terminal-button:nth-child(1) {
+    background-color: #ff5f57;
+  }
+  
+  .terminal-button:nth-child(2) {
+    background-color: #ffbd2e;
+  }
+  
+  .terminal-button:nth-child(3) {
+    background-color: #28ca41;
+  }
+  
+  .terminal-title {
+    margin-left: var(--space-3);
+    font-family: var(--font-body);
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+  }
+  
+  .terminal-content {
+    padding: var(--space-3);
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    line-height: 1.6;
+  }
+  
+  .terminal-line {
+    margin-bottom: var(--space-2);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(60, end);
+  }
+  
+  .terminal-prompt {
+    color: var(--color-primary);
+    margin-right: var(--space-2);
+  }
+  
+  .terminal-error {
+    color: #ff5f57;
+  }
+  
+  .terminal-cursor {
+    display: inline-block;
+    width: 10px;
+    height: 18px;
+    background-color: var(--color-primary);
+    animation: blink 1s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    from, to {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .glitch,
+    .glow {
+      font-size: 100px;
+      letter-spacing: -4px;
+    }
+    
+    .not-found-title {
+      font-size: var(--font-size-2xl);
+    }
+    
+    .not-found-message {
+      font-size: var(--font-size-base);
+    }
+    
+    .not-found-actions {
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    
+    .not-found-terminal {
+      max-width: 100%;
+    }
+  }

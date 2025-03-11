@@ -1,0 +1,241 @@
+/* ====================== Featured Projects Section ====================== */
+.featured-projects {
+  padding: var(--space-8) 0;
+  background-color: var(--color-background);
+  position: relative;
+  overflow: hidden;
+}
+
+.light-mode .featured-projects {
+  background-color: var(--color-background-light);
+}
+
+/* ----------------- Section Header Styles ----------------- */
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.section-title-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.section-title {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--space-2);
+  position: relative;
+  line-height: 1.2;
+}
+
+.section-title-line {
+  height: 4px;
+  width: 60px;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-full);
+  margin-top: var(--space-2);
+}
+
+.section-subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ----------------- Projects Grid Layout ----------------- */
+.featured-projects-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 始终单列布局 */
+  gap: var(--space-6);
+  margin: 0 auto;
+  max-width: 800px; /* 限制最大宽度保持视觉平衡 */
+}
+
+/* 移除所有媒体查询的多列布局 */
+/* 新增：大屏幕下的卡片放大效果 */
+@media (min-width: 1024px) {
+  .featured-projects-grid {
+    max-width: 1000px;
+  }
+  
+  .project-card {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.08);
+  }
+}
+
+/* ----------------- CTA Button Section ----------------- */
+.featured-projects-cta {
+  text-align: center;
+  margin-top: var(--space-8);
+  position: relative;
+  z-index: 2;
+}
+
+/* ----------------- Background Effects ----------------- */
+.featured-projects::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: 
+    radial-gradient(circle at 10% 10%, rgba(191, 0, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 90% 90%, rgba(0, 240, 255, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  animation: gradientFloat 15s infinite linear;
+}
+
+@keyframes gradientFloat {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(5%, 5%); }
+  50% { transform: translate(0, 10%); }
+  75% { transform: translate(-5%, 5%); }
+  100% { transform: translate(0, 0); }
+}
+
+/* ====================== Project Card Styles ====================== */
+.project-card {
+  background-color: var(--card-bg, #1e1e1e);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 
+    transform 0.3s ease, 
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  position: relative;
+  min-height: 400px;
+}
+
+.project-card:hover {
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  z-index: 5;
+}
+
+/* ----------------- Image Section ----------------- */
+.project-card-image {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.project-card:hover .project-card-image img {
+  transform: scale(1.05);
+}
+
+/* ----------------- Content Section ----------------- */
+.project-card-content {
+  padding: 1.8rem;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(30, 30, 30, 0) 0%,
+    var(--card-bg, #1e1e1e) 30%
+  );
+}
+
+.project-card-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: var(--text-primary, #ffffff);
+  letter-spacing: -0.02em;
+}
+
+.project-card-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary, #b0b0b0);
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+/* ----------------- Technology Tags ----------------- */
+.project-card-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.8rem;
+}
+
+.tech-tag {
+  background: rgba(0, 240, 255, 0.12);
+  color: var(--primary-color, #00f0ff);
+  padding: 0.3rem 0.9rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  backdrop-filter: blur(5px);
+  transition: background 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(0, 240, 255, 0.2);
+}
+
+/* ----------------- Interactive Elements ----------------- */
+.view-project {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  color: var(--primary-color, #00f0ff);
+  transition: 
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.view-project svg {
+  margin-left: 0.6rem;
+  transition: transform 0.3s ease;
+}
+
+.project-card-link:hover .view-project {
+  color: #7df2ff;
+}
+
+.project-card-link:hover .view-project svg {
+  transform: translateX(4px);
+}
+
+/* ----------------- Glow Effect ----------------- */
+.project-card-glow {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 240, 255, 0.15) 0%,
+    rgba(0, 0, 0, 0) 60%
+  );
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+}
+
+.project-card:hover .project-card-glow {
+  opacity: 1;
+}

@@ -1,0 +1,118 @@
+:root {
+    /* Color Theme */
+    --color-primary: #00f0ff;
+    --color-secondary: #bf00ff;
+    --color-tertiary: #39ff14;
+    
+    /* Dark Mode (Default) */
+    --color-background: #121212;
+    --color-background-secondary: #1e1e1e;
+    --color-background-tertiary: #2a2a2a;
+    --color-text: #f0f0f0;
+    --color-text-secondary: #b0b0b0;
+    --color-border: #333333;
+    
+    /* Light Mode Variants (Applied via .light-mode class) */
+    --color-background-light: #f5f5f7;
+    --color-background-secondary-light: #ffffff;
+    --color-background-tertiary-light: #e5e5e7;
+    --color-text-light: #121212;
+    --color-text-secondary-light: #505050;
+    --color-border-light: #d1d1d1;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    --gradient-background: linear-gradient(135deg, var(--color-background), rgba(30, 30, 30, 0.8));
+    
+    /* Typography */
+    --font-heading: 'Orbitron', sans-serif;
+    --font-body: 'Roboto Mono', monospace;
+    --font-accent: 'Space Grotesk', sans-serif;
+    
+    /* Font Sizes */
+    --font-size-xs: 0.75rem;   /* 12px */
+    --font-size-sm: 0.875rem;  /* 14px */
+    --font-size-base: 1rem;    /* 16px */
+    --font-size-md: 1.125rem;  /* 18px */
+    --font-size-lg: 1.25rem;   /* 20px */
+    --font-size-xl: 1.5rem;    /* 24px */
+    --font-size-2xl: 2rem;     /* 32px */
+    --font-size-3xl: 2.5rem;   /* 40px */
+    --font-size-4xl: 3rem;     /* 48px */
+    --font-size-5xl: 4rem;     /* 64px */
+    
+    /* Spacing (using 8px base unit) */
+    --space-1: 0.25rem;  /* 4px */
+    --space-2: 0.5rem;   /* 8px */
+    --space-3: 1rem;     /* 16px */
+    --space-4: 1.5rem;   /* 24px */
+    --space-5: 2rem;     /* 32px */
+    --space-6: 3rem;     /* 48px */
+    --space-7: 4rem;     /* 64px */
+    --space-8: 6rem;     /* 96px */
+    --space-9: 8rem;     /* 128px */
+    
+    /* Border Radius */
+    --radius-sm: 0.25rem;  /* 4px */
+    --radius-md: 0.5rem;   /* 8px */
+    --radius-lg: 1rem;     /* 16px */
+    --radius-full: 9999px; /* Fully rounded */
+    
+    /* Animation Timing */
+    --transition-fast: 200ms;
+    --transition-normal: 300ms;
+    --transition-slow: 500ms;
+    --transition-very-slow: 800ms;
+    
+    /* Easing Functions */
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-bounce: cubic-bezier(0.16, 1, 0.3, 1);
+    
+    /* Z-Indices */
+    --z-background: -10;
+    --z-default: 1;
+    --z-hover: 10;
+    --z-header: 100;
+    --z-modal: 1000;
+    --z-cursor: 9999;
+    
+    /* Custom Shadows */
+    --shadow-subtle: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-strong: 0 20px 25px rgba(0, 0, 0, 0.15);
+    --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    
+    /* Glow Effects */
+    --glow-primary: 0 0 10px rgba(0, 240, 255, 0.5);
+    --glow-secondary: 0 0 10px rgba(191, 0, 255, 0.5);
+    --glow-tertiary: 0 0 10px rgba(57, 255, 20, 0.5);
+  }
+  
+  /* Apply Light Mode Theme */
+  .light-mode {
+    --color-background: var(--color-background-light);
+    --color-background-secondary: var(--color-background-secondary-light);
+    --color-background-tertiary: var(--color-background-tertiary-light);
+    --color-text: var(--color-text-light);
+    --color-text-secondary: var(--color-text-secondary-light);
+    --color-border: var(--color-border-light);
+    --gradient-background: linear-gradient(135deg, var(--color-background-light), #ffffff);
+  }
+  
+  /* Screen Size Breakpoints (for reference) */
+  /* Mobile: 320px - 767px */
+  /* Tablet: 768px - 1023px */
+  /* Desktop: 1024px - 1439px */
+  /* Large Desktop: 1440px+ */
+  
+  /* Apply reduced motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    :root {
+      --transition-fast: 0ms;
+      --transition-normal: 0ms;
+      --transition-slow: 0ms;
+      --transition-very-slow: 0ms;
+    }
+  }

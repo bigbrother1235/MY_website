@@ -1,0 +1,371 @@
+{
+    "siteInfo": {
+      "title": "张涵宇 |古希腊掌管大语言模型的卡密",
+      "description": "张涵宇的个人作品集专注于交互式网页体验和未来主义UI设计的创意开发者。",
+      "logo": "/assets/images/logo.svg",
+      "favicon": "/favicon.ico",
+      "socialImage": "/assets/images/social-share.jpg"
+    },
+    "navigation": {
+      "links": [
+        {
+          "text": "首页",
+          "url": "/"
+        },
+        {
+          "text": "关于",
+          "url": "/about"
+        },
+        {
+          "text": "作品集",
+          "url": "/portfolio"
+        },
+        {
+          "text": "博客",
+          "url": "/blog"
+        },
+        {
+          "text": "联系",
+          "url": "/contact"
+        }
+      ],
+      "socialLinks": [
+        {
+          "platform": "GitHub",
+          "url": "https://www.seu.edu.cn",
+          "icon": "github"
+        },
+        {
+          "platform": "Twitter",
+          "url": "https://www.seu.edu.cn",
+          "icon": "twitter"
+        },
+        {
+          "platform": "LinkedIn",
+          "url": "https://www.seu.edu.cn",
+          "icon": "linkedin"
+        },
+        {
+          "platform": "Dribbble",
+          "url": "https://www.seu.edu.cn",
+          "icon": "dribbble"
+        }
+      ]
+    },
+    "homePage": {
+      "hero": {
+        "title": "张涵宇",
+        "subtitle": "大模型开发者 & 机器人工程师",
+        "description": "用大模型重塑机器人领域",
+        "backgroundImage": "/assets/images/hero-bg.jpg",
+        "portraitImage": "/assets/images/portrait.png",
+        "ctaText": "探索我的作品",
+        "ctaUrl": "/portfolio"
+      },
+      "introduction": "我是一名开发者，热衷于探究如何将大模型与机器人相结合，创造出真正的智能。",
+      "featuredProjects": [
+        "project-1",
+        "project-2",
+        "project-3"
+      ]
+    },
+    "about": {
+      "biography": "我是张涵宇，一名东南大学的本科生，热衷于探究如何将大模型与机器人相结合。\n\n从升入东南大学的自动化学院后，我在多个领域取得佳绩，同时也在大模型的应用方面取得了一定的成就。\n\n我的方法将技术专长与创意视野相结合，使我能够将复杂的想法转化为优雅的数字解决方案。当我不在编码时，你可以发现我在探索新兴技术、为开源项目做贡献或指导有抱负的开发者。",
+   "skills": [
+    {
+      "category": "机器人工程",
+      "items": [
+        {
+          "name": "机器人运动控制",
+          "level": 80,
+          "icon": "robot-control-icon"
+        },
+        {
+          "name": "传感器融合",
+          "level": 85,
+          "icon": "sensor-fusion-icon"
+        },
+        {
+          "name": "路径规划与导航",
+          "level": 88,
+          "icon": "path-planning-icon"
+        },
+        {
+          "name": "ROS (Robot Operating System)",
+          "level": 92,
+          "icon": "ros-icon"
+        },
+        {
+          "name": "嵌入式系统开发",
+          "level": 85,
+          "icon": "embedded-icon"
+        }
+      ]
+    },
+    {
+      "category": "人工智能",
+      "items": [
+        {
+          "name": "深度学习",
+          "level": 95,
+          "icon": "deep-learning-icon"
+        },
+        {
+          "name": "强化学习",
+          "level": 90,
+          "icon": "rl-icon"
+        },
+        {
+          "name": "计算机视觉",
+          "level": 92,
+          "icon": "cv-icon"
+        },
+        {
+          "name": "自然语言处理",
+          "level": 85,
+          "icon": "nlp-icon"
+        },
+        {
+          "name": "模型优化与部署",
+          "level": 88,
+          "icon": "model-optimization-icon"
+        }
+      ]
+    },
+    {
+      "category": "编程与工具",
+      "items": [
+        {
+          "name": "Python",
+          "level": 95,
+          "icon": "python-icon"
+        },
+        {
+          "name": "C++",
+          "level": 90,
+          "icon": "cpp-icon"
+        },
+        {
+          "name": "TensorFlow/PyTorch",
+          "level": 92,
+          "icon": "tf-pytorch-icon"
+        },
+        {
+          "name": "OpenCV",
+          "level": 90,
+          "icon": "opencv-icon"
+        },
+        {
+          "name": "ROS (Robot Operating System)",
+          "level": 92,
+          "icon": "ros-icon"
+        }
+      ]
+    }
+  ],
+  
+    "experience": [
+      {
+        "title": "江苏省机器人大赛视觉识别组",
+        "role": "视觉识别主模块开发者",
+        "startDate": "2016-03-01",
+        "endDate": "2016-06-30",
+        "location": "江苏南京",
+        "description": "主导机器人视觉识别系统开发，通过图像处理算法实现动态目标追踪与场景理解",
+        "highlights": [
+          "设计基于OpenCV的多模态融合算法，实时识别准确率达98%",
+          "优化边缘计算模块，使处理速度提升40%",
+          "带领3人技术团队完成系统集成与调试"
+        ]
+      },
+      {
+        "title": "美国大学生数学建模大赛（MCM）",
+        "role": "建模手兼编程手",
+        "startDate": "2024-02-01",
+        "endDate": "2024-02-05",
+        "location": "线上国际赛事",
+        "description": "构建复杂系统动力学模型解决环境治理优化问题，实现算法开发与数值仿真全流程",
+        "highlights": [
+          "设计混合整数规划模型处理多约束条件[1](@ref)",
+          "开发Python数值求解框架，集成Scipy和Pandas进行大规模数据处理[2](@ref)",
+          "创新性提出时空耦合算法，模型预测精度提升25%"
+        ]
+      },
+      {
+        "title": "开放词汇伪装目标语义分割（SRTP）",
+        "role": "项目组长兼算法研究员",
+        "startDate": "2023-09-01",
+        "endDate": "2024-01-31",
+        "location": "大学实验室",
+        "description": "研发基于CLIP的开放词汇分割框架，解决复杂场景下伪装目标检测难题",
+        "highlights": [
+          "构建包含40+类别的多源异构数据集[4](@ref)",
+          "设计迭代语义引导机制，在OVCamo数据集上mIoU达58.7[4](@ref)",
+          "提出深度-边缘联合优化策略，小目标检测准确率提升32%[6](@ref)",
+          "领导6人跨学科团队完成论文撰写与系统部署"
+        ]
+      }
+    ],
+      "education": [
+        {
+          "degree": "工科学士",
+          "institution": "东南大学",
+          "location": "南京",
+          "startDate": "2023-09-01",
+          "endDate": "2027-07-01",
+          "description": "主修深度学习，参与了多个创新项目，获得多个省级和国家级奖项。"
+        }
+      ]
+    },
+    "portfolio": {
+      
+        "categories": [
+          "机器人视觉系统",
+          "智能算法开发",
+          "工业级部署",
+          "多模态感知"
+        ],
+        "projects": [
+          {
+            "id": "project-1",
+            "title": "灵眸视觉中枢",
+            "subtitle": "工业级动态目标追踪系统",
+            "description": "基于YOLOv5与OpenCV构建的实时视觉处理框架，在江苏省机器人大赛复杂光照场景中实现98.4%的识别准确率。\n\n创新性融合多光谱补偿算法，解决金属反光干扰问题，通过TensorRT加速使推理速度达到25ms/帧，成功部署于Jetson Xavier工业计算平台。",
+            "thumbnailImage": "/assets/images/projects/vision-core-thumb.jpg",
+            "featuredImage": "/assets/images/projects/vision-core-featured.jpg",
+            "images": [
+              "/assets/images/projects/vision-core-thumb.jpg"
+    
+            ],
+            "technologies": [
+              "OpenCV 4.5",
+              "PyTorch-Lite",
+              "TensorRT",
+              "ROS2"
+            ],
+            "category": "机器人视觉系统",
+            "url": "https://robotics.seu.edu.cn",
+            "githubUrl": "https://github.com/ai-robotics/vision-core",
+            "featured": true
+          },
+          {
+            "id": "project-2",
+            "title": "时空耦合建模引擎",
+            "subtitle": "城市交通动态优化系统",
+            "description": "在美国大学生数学建模竞赛中开发的混合整数规划框架，集成时空注意力机制与强化学习策略，解决高峰时段交通流预测难题。\n\n构建包含200+约束条件的动态模型，通过分布式计算将求解效率提升3倍，最终实现预测误差率低于4.7%的竞赛最佳成绩。",
+            "thumbnailImage": "/assets/images/projects/modeling-thumb.jpg",
+            "featuredImage": "/assets/images/projects/modeling-thumb.jpg",
+            "images": [
+              "/assets/images/projects/modeling-thumb.jpg"
+            
+            ],
+            "technologies": [
+              "Gurobi",
+              "Ray Framework",
+              "Scikit-Optimize",
+              "Dask"
+            ],
+            "category": "智能算法开发",
+            "url": "https://mcm.seu.edu.cn",
+            "githubUrl": "https://github.com/ai-robotics/traffic-opt",
+            "featured": true
+          },
+          {
+            "id": "project-3",
+            "title": "幻影分割框架",
+            "subtitle": "开放词汇伪装目标检测系统",
+            "description": "基于CLIP的语义分割创新架构，在SRTP项目中实现开放环境下的伪装目标识别。\n\n设计迭代语义引导机制，构建包含40+伪装类别的多源数据集，通过深度-边缘联合优化策略将小目标检测准确率提升32%，在COCO-Camouflage基准测试中达到58.7 mIoU。",
+            "thumbnailImage": "/assets/images/projects/camouflage-thumb.jpg",
+            "featuredImage": "/assets/images/projects/camouflage-thumb.jpg",
+            "images": [
+              "/assets/projects/camouflage-thumb.jpg"
+             
+            ],
+            "technologies": [
+              "PyTorch 2.0",
+              "CLIP-ViT",
+              "ONNX Runtime",
+              "Label Studio"
+            ],
+            "category": "多模态感知",
+            "url": "https://cvlab.seu.edu.cn",
+            "githubUrl": "https://github.com/ai-robotics/camo-seg",
+            "featured": true
+          },
+          {
+            "id": "project-4",
+            "title": "边缘智能终端",
+            "subtitle": "工业级模型部署解决方案",
+            "description": "面向智能制造场景的轻量化部署系统，集成模型量化、知识蒸馏与硬件感知优化技术。\n\n开发自动化部署流水线，支持TensorRT/OpenVINO多后端推理，在NVIDIA Jetson系列设备上实现3倍推理加速，功耗降低至7W以下。",
+            "thumbnailImage": "/assets/images/projects/camouflage-thumb.jpg",
+            "featuredImage": "/assets/images/projects/camouflage-thumb.jpg",
+            "images": [
+              "/assets/projects/dcamouflage-thumb.jpg"
+             
+            ],
+            "technologies": [
+              "Docker/K8s",
+              "Triton Inference",
+              "TVM",
+              "Prometheus"
+            ],
+            "category": "工业级部署",
+            "url": "https://edge.seu.edu.cn",
+            "githubUrl": "https://github.com/ai-robotics/edge-ai",
+            "featured": true
+          }
+        ]
+      
+    },
+    "blog": {
+      "categories": [
+        "开发",
+        "设计",
+        "技术",
+        "教程"
+      ],
+      "articles": [
+        {
+          "id": "article-1",
+          "title": "为网页创建沉浸式3D体验",
+          "subtitle": "深入研究WebGL和Three.js技术",
+          "publishDate": "2023-05-15",
+          "updateDate": "2023-05-20",
+          "featuredImage": "/assets/images/blog/article1.jpg",
+          "excerpt": "学习如何使用WebGL和Three.js创建引人入胜的3D网页体验，以及跨设备平滑性能的优化技术。",
+          "content": "# 为网页创建沉浸式3D体验\n\n过去十年间，网页已经发生了巨大的变化，从简单的文档页面转变为丰富的交互式应用。最令人兴奋的发展之一是能够直接在浏览器中创建沉浸式3D体验，无需插件或专业软件。\n\n## Three.js入门\n\nThree.js已成为3D网页开发的首选库，提供了简化WebGL实现的高级API。以下是帮助你入门的简单示例：\n\n```javascript\n// 初始化场景、相机和渲染器\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer({ antialias: true });\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\n// 创建一个简单的立方体\nconst geometry = new THREE.BoxGeometry();\nconst material = new THREE.MeshStandardMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\n// 添加光照\nconst light = new THREE.DirectionalLight(0xffffff, 1);\nlight.position.set(1, 1, 1);\nscene.add(light);\n\ncamera.position.z = 5;\n\n// 动画循环\nfunction animate() {\n  requestAnimationFrame(animate);\n  \n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  \n  renderer.render(scene, camera);\n}\n\nanimate();\n```\n\n## 优化技术\n\n创建沉浸式3D体验很令人兴奋，但性能优化至关重要，尤其是对于移动设备。以下是一些关键技术：\n\n1. **几何体优化**：尽可能减少多边形数量，并对重复对象使用几何体实例化等技术。\n\n2. **纹理管理**：使用纹理图集，实现适当的mipmap级别，并适当压缩纹理。\n\n3. **细节层次(LOD)**：实现LOD系统，当对象远离相机时显示更简单的模型。\n\n4. **渲染目标**：使用渲染目标创建反射等效果，而无需多次渲染整个场景。\n\n5. **着色器优化**：编写高效的着色器代码，并使用着色器预处理消除不必要的计算。\n\n## 创建沉浸式交互\n\n优秀的3D体验不仅仅是视觉效果——它们需要精心设计的交互。考虑以下原则：\n\n- **直观控制**：实现感觉自然并提供即时反馈的控制。\n- **物理模拟**：添加微妙的物理效果以创造重量感和真实感。\n- **相机过渡**：设计不同视图或状态之间的平滑相机移动。\n- **性能反馈**：在系统处理或加载时提供视觉提示。\n\n## 案例研究：轨道项目\n\n在我最近的项目中，我实现了几种技术，创建了一个即使在中端移动设备上也能流畅运行的太阳系探索器。\n\n主要挑战包括：\n\n1. 渲染具有详细纹理的多个行星\n2. 实现真实的光照和大气效果\n3. 创建平滑的轨道动画\n4. 在允许近距离探索的同时保持性能\n\n通过使用自适应渲染质量、纹理压缩和基于设备能力的几何体简化，我们能够在大多数设备上实现稳定的60fps。\n\n## 结论\n\n创建沉浸式3D网页体验是艺术视觉和技术约束之间的平衡。通过利用Three.js和WebGL等现代网页技术，并仔细优化你的实现，你可以创建在各种设备上运行的令人惊叹的体验。\n\n在未来的文章中，我将深入探讨特定技术，如程序生成、真实材质和为移动设备优化3D应用。",
+          "author": {
+            "name": "周宏宇",
+            "avatar": "/assets/images/avatar.jpg"
+          },
+          "categories": ["开发", "技术"],
+          "tags": ["WebGL", "Three.js", "3D", "性能优化"],
+          "readTime": 8
+        }
+      ]
+    },
+    "contact": {
+      "email": "zhykk3259@gmail.com",
+      "phone": "+86 156 3271 6661",
+      "location": "南京市玄武区",
+      "formEndpoint": "https://www.seu.edu.cn",
+      "availabilityText": "目前可接受精选自由职业项目",
+      "socialProfiles": {
+        "linkedin": "https://www.seu.edu.cn",
+        "twitter": "https://www.seu.edu.cn",
+        "github": "https://www.seu.edu.cn"
+      }
+    },
+    "theme": {
+      "colors": {
+        "primary": "#00f0ff",
+        "secondary": "#bf00ff",
+        "tertiary": "#39ff14",
+        "background": "#121212",
+        "cardBackground": "#1e1e1e",
+        "text": "#f0f0f0",
+        "textSecondary": "#b0b0b0"
+      },
+      "darkMode": true
+    }
+  }

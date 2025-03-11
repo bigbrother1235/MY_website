@@ -1,0 +1,308 @@
+/* Project Grid Styles */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--space-6);
+  }
+  
+  @media (min-width: 640px) {
+    .project-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .project-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Grid Item Animation */
+  .project-grid > div {
+    transition: all var(--transition-normal) var(--ease-out);
+  }
+  
+  /* Masonry layout for larger screens */
+  @media (min-width: 1280px) {
+    .project-grid {
+      grid-auto-flow: dense;
+    }
+    
+    /* Optional: Featured projects can span multiple columns */
+    .project-grid > div:nth-child(5n + 1) {
+      grid-column: span 2;
+    }
+  }
+  
+  /* Grid loading animation */
+  .project-grid.loading {
+    opacity: 0.6;
+  }
+  
+  /* Empty state */
+  .project-grid-empty {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-secondary);
+    background-color: var(--color-background-secondary);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-lg);
+  }
+  
+  .light-mode .project-grid-empty {
+    background-color: var(--color-background-secondary-light);
+  }
+  /* 这些样式可以添加到你的CSS文件中，确保项目卡片正确显示 */
+
+/* 确保项目卡片可见 */
+.project-card {
+  background-color: var(--card-bg, #1e1e1e);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  min-height: 350px;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+/* 确保图片部分有足够高度 */
+.project-card-image {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* 确保内容部分有足够空间 */
+.project-card-content {
+  padding: 1.5rem;
+  background-color: var(--card-bg, #1e1e1e);
+  position: relative;
+  z-index: 2;
+}
+
+/* 确保项目标题可见 */
+.project-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary, #ffffff);
+}
+
+.project-card-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary, #b0b0b0);
+  margin-bottom: 1rem;
+}
+
+/* 技术标签样式 */
+.project-card-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+  background: rgba(0, 240, 255, 0.1);
+  color: var(--primary-color, #00f0ff);
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* 确保项目网格有正确的布局 */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+/* 确保卡片内的按钮文本可见 */
+.view-project {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: var(--primary-color, #00f0ff);
+  transition: transform 0.3s ease;
+}
+
+.view-project svg {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.project-card-link:hover .view-project svg {
+  transform: translateX(3px);
+}
+
+/* 空状态样式 */
+.project-grid-empty, 
+.portfolio-empty, 
+.portfolio-loading {
+  text-align: center;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+/* 修复卡片内的光晕效果 */
+.project-card-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 240, 255, 0.4) 0%, rgba(0, 0, 0, 0) 70%);
+}
+/* 这些样式可以添加到你的CSS文件中，确保项目卡片正确显示 */
+
+/* 确保项目卡片可见 */
+.project-card {
+  background-color: var(--card-bg, #1e1e1e);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  min-height: 350px;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+/* 确保图片部分有足够高度 */
+.project-card-image {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* 确保内容部分有足够空间 */
+.project-card-content {
+  padding: 1.5rem;
+  background-color: var(--card-bg, #1e1e1e);
+  position: relative;
+  z-index: 2;
+}
+
+/* 确保项目标题可见 */
+.project-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary, #ffffff);
+}
+
+.project-card-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary, #b0b0b0);
+  margin-bottom: 1rem;
+}
+
+/* 技术标签样式 */
+.project-card-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+  background: rgba(0, 240, 255, 0.1);
+  color: var(--primary-color, #00f0ff);
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* 确保项目网格有正确的布局 */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+/* 确保卡片内的按钮文本可见 */
+.view-project {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: var(--primary-color, #00f0ff);
+  transition: transform 0.3s ease;
+}
+
+.view-project svg {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.project-card-link:hover .view-project svg {
+  transform: translateX(3px);
+}
+
+/* 空状态样式 */
+.project-grid-empty, 
+.portfolio-empty, 
+.portfolio-loading {
+  text-align: center;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+/* 修复卡片内的光晕效果 */
+.project-card-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 240, 255, 0.4) 0%, rgba(0, 0, 0, 0) 70%);
+}

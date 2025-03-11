@@ -1,0 +1,155 @@
+/* 这些样式可以添加到styles/pages/home.css文件中 */
+
+/* 专业技能部分样式 */
+.expertise-section {
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .expertise-content {
+    margin-top: 2rem;
+  }
+  
+  .expertise-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.2rem;
+    color: var(--text-secondary, #b0b0b0);
+  }
+  
+  /* 技能可视化区域 */
+  .skills-visualization {
+    margin-bottom: 3rem;
+  }
+  
+  .skills-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+  }
+  
+  .skills-category {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color, #00f0ff);
+    display: flex;
+    align-items: center;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .skill-item {
+    position: relative;
+  }
+  
+  .skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-name {
+    font-weight: 500;
+  }
+  
+  .skill-level {
+    color: var(--primary-color, #00f0ff);
+    font-weight: 500;
+  }
+  
+  .skill-bar-container {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .skill-bar {
+    height: 100%;
+    background: var(--primary-color, #00f0ff);
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .no-skills-message {
+    text-align: center;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    color: var(--text-secondary, #b0b0b0);
+  }
+  
+  .expertise-cta {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  /* 介绍部分样式 */
+  .intro-section {
+    padding: 6rem 0;
+    text-align: center;
+  }
+  
+  .intro-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--text-primary, #ffffff);
+  }
+  
+  /* 其他通用样式 */
+  .section-title-container {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-primary, #ffffff);
+  }
+  
+  .section-title-line {
+    height: 4px;
+    width: 80px;
+    background: var(--primary-color, #00f0ff);
+    margin: 0 auto;
+  }
+  
+  /* 响应式样式 */
+  @media (max-width: 768px) {
+    .expertise-section,
+    .intro-section {
+      padding: 4rem 0;
+    }
+    
+    .intro-content p {
+      font-size: 1.2rem;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .skills-categories {
+      grid-template-columns: 1fr;
+    }
+  }

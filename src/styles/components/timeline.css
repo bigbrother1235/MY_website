@@ -1,0 +1,183 @@
+/* Timeline Section Styles */
+.timeline {
+    padding: var(--space-8) 0;
+    background-color: var(--color-background);
+    position: relative;
+  }
+  
+  .light-mode .timeline {
+    background-color: var(--color-background-light);
+  }
+  
+  /* Timeline Tabs */
+  .timeline-tabs {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+  }
+  
+  .timeline-tabs .tab-button {
+    min-width: 160px;
+  }
+  
+  /* Timeline Content */
+  .timeline-content {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Timeline Items */
+  .timeline-items {
+    position: relative;
+    padding-left: 40px;
+  }
+  
+  /* Vertical Line */
+  .timeline-items::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    width: 2px;
+    background: linear-gradient(to bottom, 
+      var(--color-primary) 0%, 
+      var(--color-secondary) 100%);
+  }
+  
+  /* Timeline Item */
+  .timeline-item {
+    position: relative;
+    margin-bottom: var(--space-6);
+  }
+  
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Timeline Marker */
+  .timeline-marker {
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color-background-secondary);
+    border: 2px solid var(--color-primary);
+    box-shadow: var(--glow-primary);
+    z-index: 1;
+  }
+  
+  .timeline-marker.education {
+    border-color: var(--color-secondary);
+    box-shadow: var(--glow-secondary);
+  }
+  
+  /* Timeline Item Content */
+  .timeline-item-content {
+    background-color: var(--color-background-secondary);
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-subtle);
+  }
+  
+  .light-mode .timeline-item-content {
+    background-color: var(--color-background-secondary-light);
+  }
+  
+  /* Timeline Item Header */
+  .timeline-item-header {
+    margin-bottom: var(--space-3);
+  }
+  
+  .timeline-item-title {
+    font-size: var(--font-size-lg);
+    margin: 0 0 var(--space-1);
+    color: var(--color-text);
+  }
+  
+  .timeline-item-company {
+    display: block;
+    font-size: var(--font-size-md);
+    color: var(--color-primary);
+    margin-bottom: var(--space-1);
+  }
+  
+  .timeline-marker.education + .timeline-item-content .timeline-item-company {
+    color: var(--color-secondary);
+  }
+  
+  .timeline-item-period {
+    display: block;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+  }
+  
+  /* Timeline Item Description */
+  .timeline-item-description {
+    margin-bottom: var(--space-3);
+    line-height: 1.6;
+  }
+  
+  /* Timeline Item Highlights */
+  .timeline-item-highlights {
+    padding-left: var(--space-4);
+    margin-bottom: 0;
+  }
+  
+  .timeline-item-highlights li {
+    margin-bottom: var(--space-2);
+    position: relative;
+  }
+  
+  .timeline-item-highlights li::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .timeline-tabs {
+      gap: var(--space-2);
+    }
+    
+    .timeline-tabs .tab-button {
+      min-width: 120px;
+      font-size: var(--font-size-xs);
+    }
+    
+    .timeline-items {
+      padding-left: 30px;
+    }
+    
+    .timeline-items::before {
+      left: 10px;
+    }
+    
+    .timeline-marker {
+      width: 20px;
+      height: 20px;
+      left: -30px;
+    }
+    
+    .timeline-item-title {
+      font-size: var(--font-size-md);
+    }
+    
+    .timeline-item-company {
+      font-size: var(--font-size-base);
+    }
+    
+    .timeline-item-content {
+      padding: var(--space-3);
+    }
+  }

@@ -1,0 +1,165 @@
+/* Contact Page Styles */
+.contact-page {
+    min-height: 100vh;
+    padding: var(--space-8) 0;
+    background-color: var(--color-background);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .light-mode .contact-page {
+    background-color: var(--color-background-light);
+  }
+  
+  .particle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  /* Contact Header */
+  .contact-header {
+    text-align: center;
+    margin-bottom: var(--space-6);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contact-header h1 {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--space-3);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+  
+  .contact-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Contact Content Layout */
+  .contact-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    margin-bottom: var(--space-8);
+    position: relative;
+    z-index: 1;
+  }
+  
+  @media (min-width: 1024px) {
+    .contact-content {
+      grid-template-columns: 3fr 2fr;
+      gap: var(--space-8);
+    }
+  }
+  
+  /* Availability Status */
+  .availability-status {
+    margin-top: var(--space-6);
+    padding: var(--space-3) var(--space-4);
+    background-color: var(--color-background-tertiary);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+  
+  .light-mode .availability-status {
+    background-color: var(--color-background-tertiary-light);
+  }
+  
+  .availability-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #4ade80; /* Green color for available */
+    position: relative;
+  }
+  
+  .availability-indicator::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4ade80;
+    animation: pulse 2s infinite;
+  }
+  
+  .availability-status p {
+    margin: 0;
+    font-size: var(--font-size-sm);
+  }
+  
+  /* Map or Location Visual */
+  .contact-map {
+    margin-top: var(--space-6);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .map-placeholder {
+    height: 200px;
+    background-color: var(--color-background-secondary);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-secondary);
+    box-shadow: var(--shadow-medium);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .light-mode .map-placeholder {
+    background-color: var(--color-background-secondary-light);
+  }
+  
+  .map-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(0, 240, 255, 0.05) 0%, transparent 70%);
+    z-index: 0;
+  }
+  
+  .map-pin {
+    margin-bottom: var(--space-2);
+    color: var(--color-primary);
+    animation: bounce 2s infinite;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .location-text {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-md);
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .contact-header h1 {
+      font-size: var(--font-size-3xl);
+    }
+    
+    .contact-subtitle {
+      font-size: var(--font-size-md);
+    }
+  }
