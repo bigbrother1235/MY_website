@@ -34,7 +34,7 @@ const Blog = () => {
   
   const pageDescription = selectedArticle
     ? selectedArticle.excerpt?.slice(0, 160)
-    : '阅读我关于设计、开发和创意见解的最新文章。';
+    : '阅读我关于开发和创意见解的最新文章。';
   
   // Initialize articles and categories
   useEffect(() => {

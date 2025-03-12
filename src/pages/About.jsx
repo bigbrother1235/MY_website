@@ -52,7 +52,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1>关于我</h1>
+            <h1>About me</h1>
             <p className="about-subtitle">
               我的经历、技能和专业经验
             </p>
@@ -89,19 +89,19 @@ const About = () => {
             transition={{ duration: 0.6 }}
           >
             <h2>有兴趣一起合作吗？</h2>
-            <p>让我们一起将您的想法转化为出色的数字体验。</p>
+            <p>让我们一起将您的想法转化为出色的产品。</p>
             <div className="cta-buttons">
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <a href="/contact" className="button primary">联系我</a>
+                <a href="/contact" className="button primary">Contact me</a>
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <a href="/portfolio" className="button outline">查看作品</a>
+                <a href="/portfolio" className="button outline">About my work</a>
               </motion.div>
             </div>
           </motion.div>

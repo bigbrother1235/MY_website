@@ -53,7 +53,7 @@ const Home = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <a href="/contact" className="button primary">联系我</a>
+                <a href="/contact" className="button primary">contact me</a>
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.05 }}
