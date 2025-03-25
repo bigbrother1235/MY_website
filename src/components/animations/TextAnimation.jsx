@@ -14,7 +14,7 @@ import { motion } from 'framer-motion';
 const TextAnimation = ({ 
   text, 
   type = 'typing', 
-  delay = 0, 
+  delay = 2,
   duration = 2000,
   className = '',
 }) => {
