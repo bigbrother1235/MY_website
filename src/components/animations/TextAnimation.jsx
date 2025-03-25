@@ -15,7 +15,7 @@ const TextAnimation = ({
   text, 
   type = 'typing', 
   delay = 2,
-  duration = 2000,
+  duration = 10000,
   className = '',
 }) => {
   const containerRef = useRef(null);
