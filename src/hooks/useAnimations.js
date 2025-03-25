@@ -15,7 +15,7 @@ import { useScrollPosition } from './useScrollPosition';
 export const useTypingAnimation = ({ 
   text, 
   element, 
-  speed = 50, 
+  speed = 20,
   delay = 0, 
   onComplete 
 }) => {

@@ -95,7 +95,7 @@ const Biography = ({ biography = '' }) => {
             
             <div className="biography-quote">
               <blockquote>
-                "我相信创造既视觉冲击又功能强大的数字体验。"
+                "我相信我有能力创造一点不一样的东西。"
               </blockquote>
             </div>
           </motion.div>
